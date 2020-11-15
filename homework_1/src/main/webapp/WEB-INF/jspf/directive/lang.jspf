@@ -1,0 +1,6 @@
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<c:set var="lang"
+       value="${not empty sessionScope.get(\"lang\") ? sessionScope.get(\"lang\") : not empty sessionScope.get(\"lang\") ? sessionScope.get(\"lang\") : 'ru'}"
+       scope="session"/>
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="resources"/>

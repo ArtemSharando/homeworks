@@ -1,0 +1,584 @@
+2020-10-24 20:09:34 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 20:09:34 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 20:09:34 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 20:10:07 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 20:10:07 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 20:10:07 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 20:41:57 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 20:41:57 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 20:41:57 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 21:53:02 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 21:53:03 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 21:53:03 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:16:20 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:16:20 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:16:20 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:16:44 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:16:44 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:16:44 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:23:24 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:23:24 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:23:24 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:23:45 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:23:45 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:23:45 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:28:00 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:28:00 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:28:00 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:28:12 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:28:12 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:28:12 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:31:16 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:31:16 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:31:16 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:33:28 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:33:28 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:33:28 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:33:44 INFO  ProfileServlet:62 - adminpassed the test83,33
+2020-10-24 22:35:30 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:35:30 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:35:30 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:36:18 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:36:18 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:36:18 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:36:28 INFO  ProfileServlet:62 - admin passed the test 50%
+2020-10-24 22:39:33 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-24 22:39:33 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-24 22:39:33 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-24 22:39:44 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-24 22:39:45 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-24 22:39:45 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-24 22:40:35 INFO  ProfileServlet:62 - admin passed the test 66,67%
+2020-10-24 22:41:25 INFO  ProfileServlet:62 - admin passed the test 33,33%
+2020-10-25 02:08:22 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:08:22 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:08:22 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:08:40 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:08:40 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:08:40 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:10:48 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:10:48 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:10:48 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:10:54 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:10:54 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:10:54 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:12:22 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:12:22 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:12:22 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:12:29 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:12:29 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:12:29 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:15:22 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:15:22 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:15:22 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:15:28 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:15:28 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:15:28 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:16:42 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:16:42 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:16:42 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:16:54 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:16:54 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:16:54 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:18:11 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:18:11 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:18:11 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:18:21 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:18:21 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Aryom, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:18:21 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:20:46 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:20:46 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:20:46 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:20:53 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:20:53 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:20:53 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:25:38 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:25:38 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:25:38 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:25:46 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:25:46 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:25:46 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 02:27:04 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 02:27:04 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 02:27:04 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 02:27:47 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 02:27:47 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 02:27:47 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 13:26:21 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 13:26:21 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 13:26:21 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 13:27:49 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 13:27:49 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 13:27:49 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 13:45:39 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 13:45:39 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 13:45:39 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 13:47:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 13:47:57 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 13:47:57 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 14:01:24 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 14:01:24 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 14:01:24 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 14:02:37 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 14:02:37 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 14:02:37 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 14:14:26 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 14:14:26 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 14:14:26 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 14:15:29 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 14:15:29 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 14:15:29 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 14:16:13 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 14:16:13 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 14:16:13 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 14:17:41 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 14:17:42 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 14:17:42 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 14:55:44 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 14:55:44 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 14:55:44 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 14:56:01 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 14:56:02 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 14:56:02 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:07:45 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:07:45 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:07:45 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:08:31 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:08:31 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:08:31 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:17:27 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:17:27 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:17:27 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:17:38 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:17:38 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:17:38 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:32:17 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:32:17 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:32:17 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:32:25 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:32:26 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:32:26 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:33:48 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:33:48 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:33:48 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:33:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:33:57 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:33:57 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:34:33 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:34:33 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:34:33 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:34:43 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:34:43 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:34:43 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 15:35:07 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 15:35:07 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 15:35:07 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 15:35:14 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 15:35:14 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 15:35:14 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 16:09:22 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 16:09:22 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 16:09:22 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 16:09:44 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 16:09:45 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 16:09:45 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 16:11:14 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 16:11:14 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 16:11:14 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 16:11:20 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 16:11:20 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 16:11:20 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 16:58:41 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 16:58:41 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 16:58:41 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 16:58:53 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 16:58:53 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 16:58:53 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:04:58 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:04:58 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:04:58 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:05:19 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:05:19 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:05:19 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:06:08 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:06:08 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:06:08 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:07:17 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:07:17 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:07:17 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:09:07 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:09:07 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:09:07 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:12:26 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:12:26 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:12:26 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:14:26 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:14:26 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:14:26 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:25:24 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:25:24 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:25:24 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:26:53 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:26:53 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:26:53 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:28:15 DEBUG LogoutServlet:19 - Logout starts
+2020-10-25 17:28:19 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:28:19 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:28:19 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:36:24 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:36:24 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:36:24 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:43:00 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:43:00 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:43:00 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:43:51 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:43:51 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:43:51 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 17:45:57 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 17:45:57 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 17:45:57 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 17:46:31 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 17:46:31 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 17:46:31 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 20:23:47 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 20:23:47 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 20:23:47 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 20:26:23 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-25 20:26:23 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-25 20:26:23 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-25 20:49:13 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 20:49:13 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 20:49:13 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 20:50:01 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 20:50:01 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 20:50:01 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 20:51:10 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 20:51:10 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 20:51:10 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 20:52:33 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 20:52:33 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 20:52:33 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 21:31:25 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 21:31:25 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 21:31:25 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 23:54:54 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 23:54:54 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 23:54:54 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 23:55:34 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 23:55:34 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 23:55:34 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-25 23:59:24 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-25 23:59:24 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-25 23:59:24 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 00:01:39 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 00:01:39 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 00:01:39 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 00:04:13 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 00:04:13 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 00:04:13 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 00:37:20 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 00:37:20 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 00:37:20 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 00:45:41 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 00:45:41 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 00:45:41 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 01:57:47 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 01:57:47 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 01:57:47 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 02:27:41 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:27:42 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 02:27:42 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:28:21 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 02:28:32 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:28:32 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 02:28:32 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:28:49 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:28:49 INFO  LoginServlet:60 - User User(id=2, username=user2, password=12345, name=Artem, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 02:28:49 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:29:20 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:29:20 INFO  LoginServlet:60 - User User(id=2, username=user2, password=12345, name=Artem, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 02:29:20 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:30:20 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 02:30:20 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 02:30:20 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 02:30:44 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:30:44 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 02:30:44 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:30:48 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:31:03 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:31:03 INFO  LoginServlet:60 - User User(id=2, username=user2, password=12345, name=Artem, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 02:31:03 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:34:52 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 02:34:52 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 02:34:52 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 02:35:05 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:35:06 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 02:35:06 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:36:32 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 02:36:32 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 02:36:32 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 02:37:51 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 02:37:51 INFO  LoginServlet:60 - User User(id=43, username=niwwspi, password=12345, name=Katya, surname=Kostyna, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 02:37:51 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 02:45:15 INFO  ProfileServlet:63 - niwwspi passed the test 100%
+2020-10-26 03:17:08 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:37:22 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 03:37:22 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 03:37:22 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 03:37:55 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:38:05 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:38:13 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:38:17 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:38:37 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:39:15 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:39:16 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:39:22 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:39:28 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:40:05 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:40:27 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:40:34 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:40:42 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:41:05 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:41:15 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:41:30 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 03:41:30 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 03:41:30 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 03:58:26 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 03:58:37 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 03:58:37 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 03:58:37 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 04:22:58 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 04:23:17 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 04:23:17 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 04:23:17 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 04:33:36 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 04:33:36 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 04:33:36 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 04:47:29 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 04:47:56 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 04:47:56 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 04:47:56 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 04:48:09 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 04:48:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 04:48:16 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 04:48:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 04:53:23 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 05:00:39 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 05:00:39 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 05:00:39 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 13:31:24 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 13:31:24 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 13:31:24 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 13:31:56 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 13:31:56 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 13:31:56 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 13:32:09 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 13:32:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 13:32:16 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 13:32:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 13:35:55 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 13:35:55 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 13:35:55 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 13:58:36 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 13:58:36 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 13:58:36 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 14:00:03 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 14:00:03 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 14:00:03 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 14:18:21 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 14:18:21 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 14:18:21 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 14:19:03 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 14:19:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 14:19:16 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 14:19:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 15:07:11 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 15:07:11 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 15:07:11 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 15:14:35 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 15:14:36 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 15:14:36 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 15:19:51 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 15:19:51 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 15:19:51 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 15:20:24 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 15:20:24 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 15:20:24 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 16:41:12 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 16:41:12 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 16:41:12 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 16:41:32 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 16:41:32 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 16:41:32 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 16:43:38 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 16:43:38 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 16:43:38 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 16:44:36 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 16:44:36 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 16:44:36 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 16:44:45 INFO  ProfileServlet:63 - admin passed the test 75%
+2020-10-26 17:09:02 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 17:09:02 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 17:09:02 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 17:09:37 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 17:09:37 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 17:09:37 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 17:11:35 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 17:11:35 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 17:11:35 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 17:11:52 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 17:11:52 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 17:11:52 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 17:59:20 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 17:59:20 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 17:59:20 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 18:08:39 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 18:08:39 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 18:08:39 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 19:40:02 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 19:40:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 19:40:16 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 19:40:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 19:48:04 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 19:48:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 19:48:16 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 19:48:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 20:13:36 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 20:13:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 20:13:57 INFO  LoginServlet:60 - User User(id=33, username=user2, password=12345, name=Ivan, surname=Kravec, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-26 20:13:57 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 20:14:40 INFO  ProfileServlet:63 - user2 passed the test 0%
+2020-10-26 21:38:11 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 21:38:20 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 21:38:20 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 21:38:20 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 21:41:49 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 21:42:36 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 21:42:36 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 21:42:36 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 22:15:15 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 22:15:21 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 22:15:21 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 22:15:21 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 22:23:18 DEBUG LogoutServlet:19 - Logout starts
+2020-10-26 22:48:38 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 22:48:38 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 22:48:38 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 22:59:59 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 22:59:59 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 22:59:59 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 23:00:20 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 23:00:20 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 23:00:20 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 23:37:32 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 23:37:32 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 23:37:32 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 23:39:54 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 23:39:54 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 23:39:54 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-26 23:41:26 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-26 23:41:26 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-26 23:41:26 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-26 23:42:23 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-26 23:42:23 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-26 23:42:23 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 01:18:50 INFO  ProfileServlet:63 - admin passed the test 16,67%
+2020-10-27 01:24:50 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 01:24:50 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 01:24:50 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 01:25:58 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 01:25:58 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 01:25:58 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 01:27:16 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 01:27:16 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 01:27:16 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 01:30:21 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 01:30:21 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 01:30:21 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 01:30:34 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 01:30:34 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 01:30:34 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 01:30:42 INFO  ProfileServlet:63 - admin passed the test 0%
+2020-10-27 01:30:50 INFO  ProfileServlet:63 - admin passed the test 0%
+2020-10-27 10:55:39 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 10:55:39 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 10:55:39 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 10:58:44 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 10:58:46 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 10:58:46 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 11:01:13 INFO  ProfileServlet:62 - admin passed the test 0%
+2020-10-27 11:02:16 DEBUG LogoutServlet:19 - Logout starts
+2020-10-27 11:04:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 11:04:57 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 11:04:57 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 11:37:24 INFO  ProfileServlet:62 - admin passed the test 0%
+2020-10-27 11:37:42 INFO  ProfileServlet:62 - admin passed the test 75%
+2020-10-27 14:56:42 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 14:56:42 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 14:56:42 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 14:56:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 14:56:58 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 14:56:58 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 14:57:06 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 14:57:06 INFO  LoginServlet:60 - User User(id=41, username=user6, password=12345, name=Artyom, surname=Ivanov, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-10-27 14:57:06 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 14:57:17 INFO  ProfileServlet:63 - user6 passed the test 0%
+2020-10-27 14:57:23 INFO  ProfileServlet:63 - user6 passed the test 0%
+2020-10-27 14:57:54 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 14:57:54 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 14:57:54 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 14:58:12 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 14:58:12 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 14:58:12 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 15:09:43 DEBUG LogoutServlet:19 - Logout starts
+2020-10-27 15:09:52 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 15:09:52 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 15:09:52 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 16:31:51 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-10-27 16:31:51 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-10-27 16:31:51 DEBUG AccessFilter:18 - Filter initialization starts
+2020-10-27 16:32:29 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 16:32:30 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 16:32:30 DEBUG LoginServlet:66 - LoginServlet finished
+2020-10-27 16:32:47 INFO  ProfileServlet:62 - admin passed the test 66,67%
+2020-10-27 16:33:22 INFO  AnswerDAO:71 - del
+2020-10-27 16:33:22 INFO  QuestionDAO:74 - del
+2020-10-27 16:33:22 INFO  TestDAO:115 - del
+2020-10-27 17:22:22 DEBUG LoginServlet:29 - LoginServlet starts
+2020-10-27 17:22:22 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Artem, surname=Sharando, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-10-27 17:22:22 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:17:19 DEBUG EncodingFilter:18 - Filter initialization starts
+2020-11-08 15:17:19 DEBUG EncodingFilter:20 - Filter initialization finished
+2020-11-08 15:17:19 DEBUG AccessFilter:18 - Filter initialization starts
+2020-11-08 15:20:21 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:20:31 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:24:57 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:24:57 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Артём, surname=Шарандо, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-11-08 15:24:57 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:26:17 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:27:22 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:27:22 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Артём, surname=Шарандо, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-11-08 15:27:22 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:33:39 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:34:04 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:34:04 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Артём, surname=Шарандо, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-11-08 15:34:04 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:34:24 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:34:29 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:34:29 INFO  LoginServlet:60 - User User(id=55, username=user2, password=12345, name=Андрей, surname=Шарандо, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-11-08 15:34:29 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:34:32 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:34:36 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:34:36 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Артём, surname=Шарандо, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-11-08 15:34:36 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:35:21 INFO  ProfileServlet:62 - admin passed the test 33,33%
+2020-11-08 15:36:14 INFO  ProfileServlet:62 - admin passed the test 50%
+2020-11-08 15:37:01 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:37:46 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:37:46 INFO  LoginServlet:60 - User User(id=56, username=user3, password=12345, name=Даша, surname=Шарандо, status=true, roleId=Role(id_roles=2, role=user)) logged as user
+2020-11-08 15:37:46 DEBUG LoginServlet:66 - LoginServlet finished
+2020-11-08 15:38:14 INFO  ProfileServlet:62 - user3 passed the test 50%
+2020-11-08 15:38:25 DEBUG LogoutServlet:19 - Logout starts
+2020-11-08 15:38:30 DEBUG LoginServlet:29 - LoginServlet starts
+2020-11-08 15:38:30 INFO  LoginServlet:60 - User User(id=1, username=admin, password=admin, name=Артём, surname=Шарандо, status=true, roleId=Role(id_roles=1, role=admin)) logged as admin
+2020-11-08 15:38:30 DEBUG LoginServlet:66 - LoginServlet finished
