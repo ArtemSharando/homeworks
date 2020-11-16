@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d8c884b-15cb-4997-a968-6fbe09c5fe03" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/homework_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging.log" beforeDir="false" />
-    </list>
+    <list default="true" id="5d8c884b-15cb-4997-a968-6fbe09c5fe03" name="Default Changelist" comment="Delete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,15 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,7 +190,7 @@
       <workItem from="1605485867610" duration="2063000" />
       <workItem from="1605531915824" duration="2152000" />
       <workItem from="1605545215266" duration="940000" />
-      <workItem from="1605548636823" duration="6027000" />
+      <workItem from="1605548636823" duration="6318000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1602672275173</created>
@@ -344,7 +339,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605557109687</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update">
+      <created>1605559229093</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559229093</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Delete">
+      <created>1605559334661</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559334661</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,13 +376,13 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/final-project" />
     </ignored-roots>
-    <MESSAGE value="Delete" />
     <MESSAGE value="Update Service" />
     <MESSAGE value="Move project to spring" />
     <MESSAGE value="add database file" />
     <MESSAGE value="add some comments" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1605109512228">
@@ -424,26 +433,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605534198698" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605557058125">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605559473880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058125" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605557058124">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605559473880" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605559473880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058124" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605557058124">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605559473880" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605559473879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058124" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605557058125">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605559473879" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605559473880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058125" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605559473880" />
     <state width="1877" height="364" key="GridCell.Tab.1.bottom" timestamp="1605458158576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -480,10 +489,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605485410133" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605557186721">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605559342570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605557186721" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605559342570" />
     <state x="664" y="411" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604840871186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -496,6 +505,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602940798128" />
+    <state x="742" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605559197547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605559197547" />
     <state x="342" y="140" key="new project wizard" timestamp="1605372614330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
