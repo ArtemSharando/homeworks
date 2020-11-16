@@ -23,40 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d8c884b-15cb-4997-a968-6fbe09c5fe03" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/annotation/BeanPostProcessorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/service/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/.idea/artifacts/embeddedTomcatSample_Web_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_2/src/main/java/ua/dnipro/epam/homework/service/AnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/config/DBConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/AnswerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/ComplexityDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/GeneralDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/GradeDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/impl/AnswerDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/impl/ComplexityDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/dao/impl/GradeDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Answer$AnswerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Complexity$ComplexityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Complexity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Grade$GradeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/entity/Grade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/exception/ConnectionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/filter/AccessFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/filter/EncodingFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/manager/DBManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/service/AnswerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/service/ComplexityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_2/target/classes/ua/dnipro/epam/homework/service/GradeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +195,7 @@
       <workItem from="1605485867610" duration="2063000" />
       <workItem from="1605531915824" duration="2152000" />
       <workItem from="1605545215266" duration="940000" />
-      <workItem from="1605548636823" duration="5202000" />
+      <workItem from="1605548636823" duration="6027000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1602672275173</created>
@@ -369,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605550269959</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update">
+      <created>1605557109687</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605557109687</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,26 +424,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605534198698" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605553161564">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605557058125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605553161564" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605553161564">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058125" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605557058124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605553161564" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605553161564">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058124" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605557058124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605553161564" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605553161564">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058124" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605557058125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605553161564" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605557058125" />
     <state width="1877" height="364" key="GridCell.Tab.1.bottom" timestamp="1605458158576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -505,10 +480,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605485410133" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605550295243">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605557186721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605550295243" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605557186721" />
     <state x="664" y="411" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604840871186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
