@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 public class AnswerService {
 
-    private AnswerDAOImpl answerDAO = new AnswerDAOImpl();
+    private final AnswerDAOImpl answerDAO = new AnswerDAOImpl();
 
     public void createListOfAnswer (List<Question> questions, HttpServletRequest request, Long testId){
         for (Question question : questions) {
@@ -39,6 +39,7 @@ public class AnswerService {
         questions.clear();
     }
 
+    //This method is used in this project to convert an object from a session to a collection.
     public static List<?> convertObjectToList(Object obj) {
         List<Question> list = new ArrayList<>();
         if (obj.getClass().isArray()) {

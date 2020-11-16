@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +19,7 @@ import java.util.Map;
 public class RegistrationController {
 
     private final UserService userService;
+    private static final Logger LOG = Logger.getLogger(RegistrationController.class);
 
     @GetMapping
     public String showRegistration(){
@@ -26,7 +28,8 @@ public class RegistrationController {
 
     @PostMapping
     public String register(@RequestParam Map<String, String> request){
-        userService.create(request.get("username"),request.get("password"),request.get("name"),request.get("surname"));
+        User user = userService.create(request.get("username"),request.get("password"),request.get("name"),request.get("surname"));
+        LOG.trace("Register new user with username: --> " + user.getUsername());
         return "redirect:/home";
     }
 }

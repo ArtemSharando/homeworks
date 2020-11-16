@@ -44,6 +44,7 @@ public class QuestionService {
         return questions;
     }
 
+    //Method for reducing the remainder to hundredths
     public String percent (double numberOfQ, double numberOfA){
         DecimalFormat df = new DecimalFormat("###.##");
         int k = 100;
