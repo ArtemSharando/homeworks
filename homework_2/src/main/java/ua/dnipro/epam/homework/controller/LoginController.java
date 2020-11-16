@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import ua.dnipro.epam.homework.annotation.Timed;
 import ua.dnipro.epam.homework.entity.RoleName;
 import ua.dnipro.epam.homework.entity.User;
 import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
