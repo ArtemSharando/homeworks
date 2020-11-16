@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d8c884b-15cb-4997-a968-6fbe09c5fe03" name="Default Changelist" comment="Move project to spring" />
+    <list default="true" id="5d8c884b-15cb-4997-a968-6fbe09c5fe03" name="Default Changelist" comment="Move project to spring">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +45,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MavenImportPreferences">
@@ -69,13 +73,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.23414071" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -109,6 +113,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,6 +186,11 @@
       <workItem from="1605373069269" duration="165000" />
       <workItem from="1605375534395" duration="2214000" />
       <workItem from="1605440038034" duration="13376000" />
+      <workItem from="1605458405930" duration="329000" />
+      <workItem from="1605460237300" duration="587000" />
+      <workItem from="1605478448392" duration="609000" />
+      <workItem from="1605484791031" duration="94000" />
+      <workItem from="1605484898617" duration="779000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1602672275173</created>
@@ -310,6 +330,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/final-project" />
+    </ignored-roots>
     <MESSAGE value="Delete" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update Service" />
@@ -357,30 +381,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="548" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603791817313" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605456534987">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605484770873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605456534987" />
-    <state width="1877" height="364" key="GridCell.Tab.0.bottom" timestamp="1605458158576">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605484770873" />
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom" timestamp="1605485709570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605458158576" />
-    <state width="1877" height="364" key="GridCell.Tab.0.center" timestamp="1605458158575">
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605485709570" />
+    <state width="1877" height="302" key="GridCell.Tab.0.center" timestamp="1605485709570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="364" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605458158575" />
-    <state width="1877" height="364" key="GridCell.Tab.0.left" timestamp="1605458158575">
+    <state width="1877" height="302" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605485709570" />
+    <state width="1877" height="302" key="GridCell.Tab.0.left" timestamp="1605485709570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="364" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605458158575" />
-    <state width="1877" height="364" key="GridCell.Tab.0.right" timestamp="1605458158576">
+    <state width="1877" height="302" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605485709570" />
+    <state width="1877" height="302" key="GridCell.Tab.0.right" timestamp="1605485709570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="207" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1602790729872" />
-    <state width="1877" height="364" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605458158576" />
+    <state width="1877" height="302" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605485709570" />
     <state width="1877" height="364" key="GridCell.Tab.1.bottom" timestamp="1605458158576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -413,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603803457156" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1605372617454">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1605485410133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605372617454" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605485410133" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605376728992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
