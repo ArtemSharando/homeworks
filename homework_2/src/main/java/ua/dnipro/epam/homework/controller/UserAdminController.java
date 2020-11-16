@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ua.dnipro.epam.homework.service.UserService;
+import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/userAdmin")
 public class UserAdminController {
 
-    private final UserService userService;
+    private final UserServiceImpl userServiceImpl;
 
     @GetMapping
     public String userAdminPage(){
@@ -23,37 +23,37 @@ public class UserAdminController {
 
     @GetMapping("ban")
     public String userAdminBanPage(HttpServletRequest request){
-        request.setAttribute("users", userService.findAllActive());
+        request.setAttribute("users", userServiceImpl.findAllActive());
         return "ban";
     }
 
     @PostMapping("ban")
     public String userAdminBan(HttpServletRequest request){
-        userService.statusUser(request.getParameter("userId"), false);
+        userServiceImpl.statusUser(request.getParameter("userId"), false);
         return "redirect:/userAdmin";
     }
 
     @GetMapping("unban")
     public String userAdminUnBanPage(HttpServletRequest request){
-        request.setAttribute("users", userService.findAllInactive());
+        request.setAttribute("users", userServiceImpl.findAllInactive());
         return "unban";
     }
 
     @PostMapping("unban")
     public String userAdminUnban(HttpServletRequest request){
-        userService.statusUser(request.getParameter("user"), true);
+        userServiceImpl.statusUser(request.getParameter("user"), true);
         return "redirect:/userAdmin";
     }
 
     @GetMapping("edit")
     public String userAdminEditPage(HttpServletRequest request){
-        request.setAttribute("users", userService.findAll());
+        request.setAttribute("users", userServiceImpl.findAll());
         return "editUser";
     }
 
     @PostMapping("edit")
     public String userAdminEdit(HttpServletRequest request){
-        userService.update(userService.findAll(), request);
+        userServiceImpl.update(userServiceImpl.findAll(), request);
         return "redirect:/userAdmin";
     }
 }

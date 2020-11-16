@@ -16,7 +16,7 @@ public class LogoutController {
     private static final Logger LOG = Logger.getLogger(LogoutController.class);
 
     @GetMapping
-    public String logout(HttpSession session, Model model){
+    public String logout(HttpSession session){
         if(session != null){
             LOG.debug("Session " + session.getId() + " is over");
             session.invalidate();
