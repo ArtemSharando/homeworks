@@ -2,6 +2,8 @@ package ua.dnipro.epam.homework.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import ua.dnipro.epam.homework.annotation.Timed;
+import ua.dnipro.epam.homework.dao.UserDAO;
 import ua.dnipro.epam.homework.dao.impl.UserDAOImpl;
 import ua.dnipro.epam.homework.entity.User;
 import ua.dnipro.epam.homework.service.UserService;
@@ -15,26 +17,27 @@ import static ua.dnipro.epam.homework.manager.QuerySQL.*;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserDAOImpl userDAOImpl = new UserDAOImpl();
+    private final UserDAO userDAO;
 
+    @Timed
     @Override
     public User findByUsername (String username){
-        return userDAOImpl.findByUsername(username).orElse(null);
+        return userDAO.findByUsername(username).orElse(null);
     }
 
     @Override
     public List<User> findAll(){
-        return userDAOImpl.findAll(SELECT_FROM_USER_ALL);
+        return userDAO.findAll(SELECT_FROM_USER_ALL);
     }
 
     @Override
     public List<User> findAllActive(){
-        return userDAOImpl.findAll(SELECT_FROM_USER_ALL_WHERE_STATUS_TRUE);
+        return userDAO.findAll(SELECT_FROM_USER_ALL_WHERE_STATUS_TRUE);
     }
 
     @Override
     public List<User> findAllInactive(){
-       return userDAOImpl.findAll(SELECT_FROM_USER_ALL_WHERE_STATUS_FALSE);
+       return userDAO.findAll(SELECT_FROM_USER_ALL_WHERE_STATUS_FALSE);
     }
 
     @Override
@@ -45,12 +48,12 @@ public class UserServiceImpl implements UserService {
                 .name(name)
                 .surname(surname)
                 .build();
-        return userDAOImpl.create(user);
+        return userDAO.create(user);
     }
 
     @Override
     public User statusUser(String requestUserId, boolean status){
-        return userDAOImpl.ban(Long.parseLong(requestUserId),status);
+        return userDAO.ban(Long.parseLong(requestUserId),status);
     }
 
     @Override
@@ -62,7 +65,7 @@ public class UserServiceImpl implements UserService {
                     .name(request.getParameter("name" + user.getId()))
                     .surname(request.getParameter("surname" + user.getId()))
                     .build();
-            userDAOImpl.update(entity, user.getId());
+            userDAO.update(entity, user.getId());
         }
     }
 

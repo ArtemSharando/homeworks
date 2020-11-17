@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
-import ua.dnipro.epam.homework.dao.RoleDAOI;
+import org.springframework.stereotype.Repository;
+import ua.dnipro.epam.homework.dao.RoleDAO;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Role;
 
@@ -12,7 +13,8 @@ import java.util.Optional;
 
 import static ua.dnipro.epam.homework.manager.QuerySQL.SELECT_FROM_ROLES_BY_ROLE;
 
-public class RoleDAOImpl implements RoleDAOI {
+@Repository
+public class RoleDAOImpl implements RoleDAO {
 
     private final Connection connection;
 

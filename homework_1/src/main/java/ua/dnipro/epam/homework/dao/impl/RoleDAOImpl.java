@@ -38,4 +38,8 @@ public class RoleDAOImpl implements RoleDAOI {
         }
     }
 
+    public void create(){
+
+    }
+
 }

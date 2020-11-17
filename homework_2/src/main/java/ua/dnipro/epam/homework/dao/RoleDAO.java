@@ -4,7 +4,7 @@ import ua.dnipro.epam.homework.entity.Role;
 
 import java.util.Optional;
 
-public interface RoleDAOI {
+public interface RoleDAO {
 
     Optional<Role> findByRole (String role);
 

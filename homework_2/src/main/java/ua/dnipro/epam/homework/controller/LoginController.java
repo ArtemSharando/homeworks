@@ -6,10 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ua.dnipro.epam.homework.annotation.Timed;
 import ua.dnipro.epam.homework.entity.RoleName;
 import ua.dnipro.epam.homework.entity.User;
-import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
+import ua.dnipro.epam.homework.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -22,7 +21,7 @@ public class LoginController {
 
     private static final Logger LOG = Logger.getLogger(LoginController.class);
 
-    private final UserServiceImpl userServiceImpl;
+    private final UserService userService;
 
     @GetMapping
     public String LoginPage() {
@@ -40,7 +39,7 @@ public class LoginController {
             throw new IOException("Login/password cannot be empty");
         }
 
-        User user = userServiceImpl.findByUsername(username);
+        User user = userService.findByUsername(username);
         LOG.trace("Found in DB: user --> " + user);
 
 

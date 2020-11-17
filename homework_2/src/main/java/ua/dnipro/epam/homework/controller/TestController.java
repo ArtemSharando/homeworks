@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ua.dnipro.epam.homework.dto.QuestionContentWithAnswer;
 import ua.dnipro.epam.homework.entity.Answer;
 import ua.dnipro.epam.homework.entity.Test;
-import ua.dnipro.epam.homework.service.impl.GradeServiceImpl;
-import ua.dnipro.epam.homework.service.impl.QuestionServiceImpl;
-import ua.dnipro.epam.homework.service.impl.TestServiceImpl;
-import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
+import ua.dnipro.epam.homework.service.GradeService;
+import ua.dnipro.epam.homework.service.QuestionService;
+import ua.dnipro.epam.homework.service.TestService;
+import ua.dnipro.epam.homework.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -23,10 +23,10 @@ import java.util.List;
 @RequestMapping("/takeTest")
 public class TestController {
 
-    private final TestServiceImpl testServiceImpl;
-    private final QuestionServiceImpl questionServiceImpl;
-    private final UserServiceImpl userServiceImpl;
-    private final GradeServiceImpl gradeServiceImpl;
+    private final TestService testService;
+    private final QuestionService questionService;
+    private final UserService userService;
+    private final GradeService gradeServiceImpl;
 
     private List<QuestionContentWithAnswer> list = null;
     private String result = null;
@@ -35,7 +35,7 @@ public class TestController {
 
     @GetMapping
     public String testPage(HttpServletRequest request){
-        request.setAttribute("list", testServiceImpl.findAllForChoose());
+        request.setAttribute("list", testService.findAllForChoose());
         return "takeTest";
     }
 
@@ -50,12 +50,12 @@ public class TestController {
         String testStr = session.getAttribute("testId").toString();
         Long testId = Long.parseLong(testStr);
 
-        Test test = testServiceImpl.findById(testId);
+        Test test = testService.findById(testId);
 
         request.setAttribute("name", test.getName());
         request.setAttribute("time", test.getTime());
 
-        list = questionServiceImpl.findByTestId(testId);
+        list = questionService.findByTestId(testId);
         request.setAttribute("questionContentWithAnswers", list);
 
         for (QuestionContentWithAnswer questionContentWithAnswer: list){
@@ -79,7 +79,7 @@ public class TestController {
             }
         }
 
-        String result = questionServiceImpl.percent(list.size(),k);
+        String result = questionService.percent(list.size(),k);
         session.setAttribute("result", result);
         return "redirect:/takeTest/completedTest";
     }
@@ -95,8 +95,8 @@ public class TestController {
         String username = session.getAttribute("username").toString();
         gradeServiceImpl.create(result,
                 Long.parseLong(session.getAttribute("testId").toString()),
-                userServiceImpl.findByUsername(username).getId());
-        LOG.info(userServiceImpl.findByUsername(username).getUsername() + " passed the test " + result +"%");
+                userService.findByUsername(username).getId());
+        LOG.info(userService.findByUsername(username).getUsername() + " passed the test " + result +"%");
         return "redirect:/home";
     }
 }

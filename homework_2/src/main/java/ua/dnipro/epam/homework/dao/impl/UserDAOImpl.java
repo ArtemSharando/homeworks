@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 
+import org.springframework.stereotype.Repository;
 import ua.dnipro.epam.homework.dao.UserDAO;
 import ua.dnipro.epam.homework.entity.Role;
 import ua.dnipro.epam.homework.entity.User;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 import static ua.dnipro.epam.homework.manager.QuerySQL.*;
 
+@Repository
 public class UserDAOImpl implements UserDAO {
 
     private final Connection connection;
@@ -48,6 +50,7 @@ public class UserDAOImpl implements UserDAO {
         }
     }
 
+    @Override
     public User ban (Long id, Boolean status){
         UserDAOImpl userDAOImpl = new UserDAOImpl();
         User user = userDAOImpl.findById(id);

@@ -9,26 +9,30 @@ import ua.dnipro.epam.homework.dao.impl.TestDAOImpl;
 import ua.dnipro.epam.homework.dto.GradeWithTestName;
 import ua.dnipro.epam.homework.dto.TestSubjectComplexity;
 import ua.dnipro.epam.homework.entity.Test;
+import ua.dnipro.epam.homework.service.TestService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
 @Service
-public class TestServiceImpl {
+public class TestServiceImpl implements TestService {
 
     private TestDAOImpl testDAOImpl = new TestDAOImpl();
 
     private GradeDAOImpl gradeDAOImpl = new GradeDAOImpl();
 
+    @Override
     public List<Test> findAll(String lang) {
         return testDAOImpl.findAll(lang);
     }
 
+    @Override
     public Test findById(Long testId){
         return testDAOImpl.findById(testId);
     }
 
+    @Override
     public List<GradeWithTestName> findByUserID(Long userId) {
         List<GradeWithTestName> list = new ArrayList<>();
         gradeDAOImpl.findByUserId(userId).stream().forEach(grade -> list.add(GradeWithTestName
@@ -39,6 +43,7 @@ public class TestServiceImpl {
         return list;
     }
 
+    @Override
     public List<TestSubjectComplexity> findAllForChoose() {
 
         List<TestSubjectComplexity> list = new ArrayList<>();
@@ -56,6 +61,8 @@ public class TestServiceImpl {
                 .build()));
         return list;
     }
+
+    @Override
     public Test create (String name, int time, int numberOfQuestions, long subjectId, long complexityId){
         Test test = Test.builder()
                 .name(name)
@@ -67,6 +74,7 @@ public class TestServiceImpl {
         return testDAOImpl.create(test);
     }
 
+    @Override
     public void deleteById(String reqTestId){
         testDAOImpl.deleteById(Long.parseLong(reqTestId));
     }

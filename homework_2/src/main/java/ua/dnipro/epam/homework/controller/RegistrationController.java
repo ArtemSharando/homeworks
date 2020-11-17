@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ua.dnipro.epam.homework.entity.User;
-import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
+import ua.dnipro.epam.homework.service.UserService;
 
 import java.util.Map;
 
@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/registration")
 public class RegistrationController {
 
-    private final UserServiceImpl userServiceImpl;
+    private final UserService userService;
     private static final Logger LOG = Logger.getLogger(RegistrationController.class);
 
     @GetMapping
@@ -27,7 +27,7 @@ public class RegistrationController {
 
     @PostMapping
     public String register(@RequestParam Map<String, String> request){
-        User user = userServiceImpl.create(request.get("username"),request.get("password"),request.get("name"),request.get("surname"));
+        User user = userService.create(request.get("username"),request.get("password"),request.get("name"),request.get("surname"));
         LOG.trace("Register new user with username: --> " + user.getUsername());
         return "redirect:/home";
     }

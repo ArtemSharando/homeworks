@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ua.dnipro.epam.homework.entity.User;
-import ua.dnipro.epam.homework.service.impl.TestServiceImpl;
-import ua.dnipro.epam.homework.service.impl.UserServiceImpl;
+import ua.dnipro.epam.homework.service.TestService;
+import ua.dnipro.epam.homework.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -16,13 +16,13 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/profile")
 public class ProfileController {
 
-    private final UserServiceImpl userServiceImpl;
-    private final TestServiceImpl testServiceImpl;
+    private final UserService userService;
+    private final TestService testService;
 
     @GetMapping
     public String profilePage(HttpServletRequest request, HttpSession session){
-        User user = userServiceImpl.findByUsername(session.getAttribute("username").toString());
-        request.setAttribute("list", testServiceImpl.findByUserID(user.getId()));
+        User user = userService.findByUsername(session.getAttribute("username").toString());
+        request.setAttribute("list", testService.findByUserID(user.getId()));
         return "profile";
     }
 }

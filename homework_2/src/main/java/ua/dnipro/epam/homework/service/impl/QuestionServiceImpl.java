@@ -6,6 +6,7 @@ import ua.dnipro.epam.homework.dao.impl.AnswerDAOImpl;
 import ua.dnipro.epam.homework.dao.impl.QuestionDAOImpl;
 import ua.dnipro.epam.homework.dto.QuestionContentWithAnswer;
 import ua.dnipro.epam.homework.entity.Question;
+import ua.dnipro.epam.homework.service.QuestionService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.DecimalFormat;
@@ -14,10 +15,11 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Service
-public class QuestionServiceImpl {
+public class QuestionServiceImpl implements QuestionService {
     QuestionDAOImpl questionDAOImpl = new QuestionDAOImpl();
     AnswerDAOImpl answerDAOImpl = new AnswerDAOImpl();
 
+    @Override
     public List<QuestionContentWithAnswer> findByTestId(Long testId) {
         List <QuestionContentWithAnswer> questionContentWithAnswers = new ArrayList<>();
         questionDAOImpl.findAllTestId(testId).stream().forEach(question -> questionContentWithAnswers.add(QuestionContentWithAnswer
@@ -28,7 +30,7 @@ public class QuestionServiceImpl {
                 .build()));
         return questionContentWithAnswers;
     }
-
+    @Override
     public List <Question> createListOfQ(int numberOfQ, HttpServletRequest request, String content, String number, long testId){
         List <Question> questions = new ArrayList<>();
         for (int i = 1; i <= numberOfQ; i++) {
@@ -45,6 +47,7 @@ public class QuestionServiceImpl {
     }
 
     //Method for reducing the remainder to hundredths
+    @Override
     public String percent (double numberOfQ, double numberOfA){
         DecimalFormat df = new DecimalFormat("###.##");
         int k = 100;
