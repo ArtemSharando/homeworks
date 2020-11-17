@@ -26,7 +26,7 @@ public class TestController {
     private final TestService testService;
     private final QuestionService questionService;
     private final UserService userService;
-    private final GradeService gradeServiceImpl;
+    private final GradeService gradeService;
 
     private List<QuestionContentWithAnswer> list = null;
     private String result = null;
@@ -93,7 +93,7 @@ public class TestController {
     @PostMapping("completedTest")
     public String testCompleted(HttpSession session){
         String username = session.getAttribute("username").toString();
-        gradeServiceImpl.create(result,
+        gradeService.create(result,
                 Long.parseLong(session.getAttribute("testId").toString()),
                 userService.findByUsername(username).getId());
         LOG.info(userService.findByUsername(username).getUsername() + " passed the test " + result +"%");

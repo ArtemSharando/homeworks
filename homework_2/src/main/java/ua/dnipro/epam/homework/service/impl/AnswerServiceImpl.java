@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ua.dnipro.epam.homework.dao.impl.AnswerDAOImpl;
 import ua.dnipro.epam.homework.entity.Answer;
 import ua.dnipro.epam.homework.entity.Question;
+import ua.dnipro.epam.homework.service.AnswerService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -14,10 +15,11 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Service
-public class AnswerServiceImpl {
+public class AnswerServiceImpl implements AnswerService {
 
     private final AnswerDAOImpl answerDAO = new AnswerDAOImpl();
 
+    @Override
     public void createListOfAnswer (List<Question> questions, HttpServletRequest request, Long testId){
         for (Question question : questions) {
             for (int i = 1; i <= question.getNumberOfAnswer(); i++) {
@@ -40,7 +42,8 @@ public class AnswerServiceImpl {
     }
 
     //This method is used in this project to convert an object from a session to a collection.
-    public static List<?> convertObjectToList(Object obj) {
+    @Override
+    public List<?> convertObjectToList(Object obj) {
         List<Question> list = new ArrayList<>();
         if (obj.getClass().isArray()) {
             list = Arrays.asList((Question[])obj);
