@@ -1,5 +1,6 @@
 package ua.dnipro.epam.homework.service;
 
+import ua.dnipro.epam.homework.annotation.Timed;
 import ua.dnipro.epam.homework.entity.User;
 
 import javax.servlet.http.HttpServletRequest;

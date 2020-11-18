@@ -1,0 +1,150 @@
+
+/***************************************************************
+Login form (login.jsp)
+***************************************************************/
+
+/***************************************************************
+Registration form (registration.jsp)
+***************************************************************/
+.firstContainer{
+    margin-top: 270px;
+    margin-left: 830px;
+    border-radius: 3px; /* Скругляем уголки */
+}
+.login_container{
+    margin-top: 350px;
+    margin-left: 830px;
+}
+
+.start {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #9644C5; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 4rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 40px; /* Скругляем уголки */
+    margin-left: 860px;
+    margin-top: 425px;
+    font-size: 15pt;
+    font-family: FreeMono, monospace
+}
+.start:hover {
+    color: black; /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none; /* Добавляем подчеркивание */
+    background: #8638B2;
+}
+#buttonLang{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 875px;
+}
+#ru{
+    display: inline-block;
+    text-shadow: 1px 1px #fff;
+    text-decoration: none;
+    padding: .3em 1em;
+    border: 2px solid white;
+    border-radius: 100px;
+    outline: none;
+    background-size: 1px 100%, 1px 100%, auto auto;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+
+#en{
+    display: inline-block;
+    text-shadow: 1px 1px #fff;
+    text-decoration: none;
+    padding: .3em 1em;
+    border: 2px solid white;
+    border-radius: 100px;
+    outline: none;
+    background-size: 1px 100%, 1px 100%, auto auto;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+
+#registration_link{
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #9644C5; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 0.5rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 50px; /* Скругляем уголки */
+    margin-left: 870px;
+    margin-top: 430px;
+    font-size: 15pt;
+    font-family: FreeMono, monospace
+}
+
+#login_link{
+    color: white;
+}
+#login_link:hover{
+    text-decoration: underline; /* Убираем подчеркивание */
+    color: white;
+}
+
+#registration_link:hover {
+    color: black; /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none; /* Добавляем подчеркивание */
+    background: #8638B2;
+}
+
+.just_registr{
+    margin-left: 836px;
+    font-family: FreeMono, monospace;
+    font-size: 13pt;
+    color: white;
+}
+
+#take_test{
+    position: absolute;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #9644C5; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 2rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 50px; /* Скругляем уголки */
+    margin-left: 855px;
+    margin-top: 445px;
+    font-size: 15pt;
+    font-family: FreeMono, monospace;
+}
+
+#take_test:hover {
+    color: black; /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none; /* Добавляем подчеркивание */
+    background: #8638B2;
+}
+
+#logout_link{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+#profile_link{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+#test_link{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 40px;
+    color: white;
+    font-family: FreeMono, monospace;
+}
+#user_link{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 120px;
+    color: white;
+    font-family: FreeMono, monospace;
+}
+
+
+
+

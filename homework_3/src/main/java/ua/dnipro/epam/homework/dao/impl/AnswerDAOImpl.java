@@ -1,9 +1,8 @@
 package ua.dnipro.epam.homework.dao.impl;
 
-import ua.dnipro.epam.homework.dao.QuestionDAO;
-import ua.dnipro.epam.homework.exception.NoCreateException;
+import ua.dnipro.epam.homework.dao.AnswerDAO;
 import ua.dnipro.epam.homework.manager.DBManager;
-import ua.dnipro.epam.homework.entity.Question;
+import ua.dnipro.epam.homework.entity.Answer;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -12,50 +11,49 @@ import java.util.List;
 
 import static ua.dnipro.epam.homework.manager.QuerySQL.*;
 
-public class QuestionDAOImpl implements QuestionDAO {
+public class AnswerDAOImpl implements AnswerDAO {
 
-    private static final Logger LOG = Logger.getLogger(QuestionDAOImpl.class);
+    private static final Logger LOG = Logger.getLogger(AnswerDAOImpl.class);
 
     private final Connection connection;
 
-    AnswerDAOImpl answerDAOImpl = new AnswerDAOImpl();
-
-    public QuestionDAOImpl() {
+    public AnswerDAOImpl() {
         this.connection = DBManager.getConnection();
     }
 
     @Override
-    public Question findById(Long aLong) {
+    public Answer findById(Long aLong) {
         return null;
     }
 
     @Override
-    public List<Question> findAll(String lang) {
+    public List<Answer> findAll(String lang) {
         return null;
     }
-
 
     @Override
-    public Question create(Question entity) {
+    public Answer create(Answer entity) {
         return null;
     }
 
-    public Question create(Question entity, Long testId) {
+    public Answer create(Answer entity, Long qId, Long tId) {
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUESTION_CREATE);
-            preparedStatement.setString(1, entity.getContent());
-            preparedStatement.setInt(2, entity.getCounterQuestion());
-            preparedStatement.setInt(3, entity.getNumberOfAnswer());
-            preparedStatement.setLong(4, testId);
+            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_ANSWER_CREATE);
+            preparedStatement.setString(1, entity.getVariant());
+            preparedStatement.setInt(2, entity.getCounterAnswer());
+            preparedStatement.setBoolean(3, entity.isCorrectAnswer());
+            preparedStatement.setLong(4, qId);
+            preparedStatement.setLong(5, tId);
             preparedStatement.executeUpdate();
             entity.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new NoCreateException("Can`t create Question", e);
+            throw new RuntimeException(e);
         }
         return entity;
     }
+
     @Override
-    public Question update(Question entity, Long aLong) {
+    public Answer update(Answer entity, Long aLong) {
         return null;
     }
 
@@ -64,11 +62,9 @@ public class QuestionDAOImpl implements QuestionDAO {
 
     }
 
-    @Override
     public void deleteByTestId(Long testId) {
-        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE_FROM_QUESTION_WHERE_TEST_ID)) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE_FROM_ANSWER_WHERE_TEST_ID)) {
             preparedStatement.setLong(1, testId);
-            answerDAOImpl.deleteByTestId(testId);
             preparedStatement.executeUpdate();
             LOG.info("del");
         } catch (SQLException e) {
@@ -91,21 +87,23 @@ public class QuestionDAOImpl implements QuestionDAO {
         }
     }
 
-    public List <Question> findAllTestId(Long testId) {
-        List <Question> questions = new ArrayList<>();
+
+    public List<Answer> findByQuestionId(Long testId) {
+        List <Answer> answers = new ArrayList<>();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FROM_QUESTION_WHERE_TEST_ID);
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FROM_ANSWER_WHERE_QUESTION_ID);
             preparedStatement.setLong(1, testId);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                questions.add( new Question(
+                answers.add( new Answer(
                         resultSet.getLong("id"),
-                        resultSet.getString("content"),
-                        resultSet.getInt("counter_question"),
-                        resultSet.getInt("number_of_answer"),
+                        resultSet.getString("variant"),
+                        resultSet.getInt("counter_answer"),
+                        resultSet.getBoolean("correct_answer"),
+                        resultSet.getLong("question_id"),
                         resultSet.getLong("test_id")));
             }
-            return questions;
+            return answers;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

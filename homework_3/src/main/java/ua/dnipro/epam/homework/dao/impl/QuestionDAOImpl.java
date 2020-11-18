@@ -1,7 +1,6 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.QuestionDAO;
-import ua.dnipro.epam.homework.exception.NoCreateException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Question;
 import org.apache.log4j.Logger;
@@ -50,7 +49,7 @@ public class QuestionDAOImpl implements QuestionDAO {
             preparedStatement.executeUpdate();
             entity.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new NoCreateException("Can`t create Question", e);
+            throw new RuntimeException(e);
         }
         return entity;
     }
