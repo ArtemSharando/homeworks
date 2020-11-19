@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public String handleException(NoHandlerFoundException e, HttpServletRequest request) {
+    public String handleException(Exception e, HttpServletRequest request) {
         logger.error(e);
         request.setAttribute(EX, SOMETHING_WENT_WRONG);
         return ERROR_PAGE;
@@ -35,6 +35,7 @@ public class GlobalExceptionHandler {
         return ERROR_PAGE;
     }
 
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(EntityNotFoundException.class)
     public String handleEntityNotFoundException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
@@ -42,6 +43,7 @@ public class GlobalExceptionHandler {
         return ERROR_PAGE;
     }
 
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(WrongLoginOrPasswordException.class)
     public String handleWrongLoginOrPasswordException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
@@ -49,6 +51,7 @@ public class GlobalExceptionHandler {
         return ERROR_PAGE;
     }
 
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(EmptyLoginOrPasswordException.class)
     public String handleEmptyLoginOrPasswordException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
