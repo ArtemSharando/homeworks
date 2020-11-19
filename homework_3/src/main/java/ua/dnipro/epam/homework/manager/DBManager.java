@@ -1,5 +1,7 @@
 package ua.dnipro.epam.homework.manager;
 
+import ua.dnipro.epam.homework.exception.ConnectionException;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -17,7 +19,7 @@ public class DBManager {
             properties = new Properties();
             properties.load(fileInputStream);
         } catch (IOException e) {
-            throw new RuntimeException();
+            throw new ConnectionException("Can`t read file", e);
         }
         return properties;
     }
@@ -37,7 +39,7 @@ public class DBManager {
             connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
             return connection;
         } catch (SQLException e) {
-            throw new RuntimeException();
+            throw new ConnectionException("Not connection", e);
         }
     }
 
