@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
         return ERROR_PAGE;
     }
 
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(WrongLoginOrPasswordException.class)
     public String handleWrongLoginOrPasswordException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
@@ -51,7 +51,7 @@ public class GlobalExceptionHandler {
         return ERROR_PAGE;
     }
 
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(EmptyLoginOrPasswordException.class)
     public String handleEmptyLoginOrPasswordException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
