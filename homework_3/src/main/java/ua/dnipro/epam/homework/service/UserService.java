@@ -1,10 +1,10 @@
 package ua.dnipro.epam.homework.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import ua.dnipro.epam.homework.dao.impl.UserDAOImpl;
 import ua.dnipro.epam.homework.entity.User;
+import ua.dnipro.epam.homework.exception.NotCreateException;
 import ua.dnipro.epam.homework.exception.UserNotFoundException;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ import static ua.dnipro.epam.homework.manager.QuerySQL.*;
 @Service
 public class UserService {
 
-    private UserDAOImpl userDAOImpl = new UserDAOImpl();
+    private final UserDAOImpl userDAOImpl = new UserDAOImpl();
 
     public User findByUsername (String username){
         return userDAOImpl.findByUsername(username).orElseThrow(UserNotFoundException::new);
@@ -33,18 +33,21 @@ public class UserService {
        return userDAOImpl.findAll(SELECT_FROM_USER_ALL_WHERE_STATUS_FALSE);
     }
 
-    public User create ( String username,String password,String name,String surname){
+    public User create ( String username,String password,String name,String surname) {
         User user = User.builder()
                 .username(username)
                 .password(password)
                 .name(name)
                 .surname(surname)
                 .build();
-        return userDAOImpl.create(user);
+        if(username != null && password != null && name != null && surname != null){
+            return userDAOImpl.create(user);
+        }
+        else throw new NotCreateException("Can`t create this user");
     }
 
-    public User statusUser(String requestUserId, boolean status){
-        return userDAOImpl.ban(Long.parseLong(requestUserId),status);
+    public void statusUser(String requestUserId, boolean status){
+        userDAOImpl.ban(Long.parseLong(requestUserId), status);
     }
 
     public void update(List <User> users, HttpServletRequest request){

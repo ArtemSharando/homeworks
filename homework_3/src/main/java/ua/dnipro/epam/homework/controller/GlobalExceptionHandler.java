@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.NoHandlerFoundException;
+import ua.dnipro.epam.homework.exception.EmptyLoginOrPasswordException;
 import ua.dnipro.epam.homework.exception.EntityNotFoundException;
+import ua.dnipro.epam.homework.exception.WrongLoginOrPasswordException;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -37,6 +39,20 @@ public class GlobalExceptionHandler {
     public String handleEntityNotFoundException(HttpServletRequest request, Exception e) {
         logger.error(e.getMessage(), e);
         request.setAttribute(EX, ENTITY_NOT_FOUND);
+        return ERROR_PAGE;
+    }
+
+    @ExceptionHandler(WrongLoginOrPasswordException.class)
+    public String handleWrongLoginOrPasswordException(HttpServletRequest request, Exception e) {
+        logger.error(e.getMessage(), e);
+        request.setAttribute(EX, e.getMessage());
+        return ERROR_PAGE;
+    }
+
+    @ExceptionHandler(EmptyLoginOrPasswordException.class)
+    public String handleEmptyLoginOrPasswordException(HttpServletRequest request, Exception e) {
+        logger.error(e.getMessage(), e);
+        request.setAttribute(EX, e.getMessage());
         return ERROR_PAGE;
     }
 

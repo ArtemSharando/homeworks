@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.GradeDAO;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Grade;
 import org.apache.log4j.Logger;
@@ -42,7 +43,7 @@ public class GradeDAOImpl implements GradeDAO {
             preparedStatement.executeUpdate();
             grade.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return grade;
     }
@@ -67,7 +68,7 @@ public class GradeDAOImpl implements GradeDAO {
             }
             return null;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -87,7 +88,7 @@ public class GradeDAOImpl implements GradeDAO {
             }
             return grades;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 }

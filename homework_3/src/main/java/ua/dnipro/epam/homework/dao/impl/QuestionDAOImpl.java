@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.QuestionDAO;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Question;
 import org.apache.log4j.Logger;
@@ -49,7 +50,7 @@ public class QuestionDAOImpl implements QuestionDAO {
             preparedStatement.executeUpdate();
             entity.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return entity;
     }
@@ -72,7 +73,7 @@ public class QuestionDAOImpl implements QuestionDAO {
             LOG.info("del");
         } catch (SQLException e) {
             LOG.error(e);
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -86,7 +87,7 @@ public class QuestionDAOImpl implements QuestionDAO {
             }
             return null;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -106,7 +107,7 @@ public class QuestionDAOImpl implements QuestionDAO {
             }
             return questions;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 }

@@ -4,6 +4,7 @@ package ua.dnipro.epam.homework.dao.impl;
 import ua.dnipro.epam.homework.dao.UserDAO;
 import ua.dnipro.epam.homework.entity.Role;
 import ua.dnipro.epam.homework.entity.User;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 
 
@@ -44,11 +45,11 @@ public class UserDAOImpl implements UserDAO {
             }
             return Optional.ofNullable(user);
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
-    public User ban (Long id, Boolean status){
+    public void ban (Long id, Boolean status){
         UserDAOImpl userDAOImpl = new UserDAOImpl();
         User user = userDAOImpl.findById(id);
         try {
@@ -57,9 +58,8 @@ public class UserDAOImpl implements UserDAO {
             preparedStatement.setLong(2, user.getId());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DBException(e);
         }
-        return user;
     }
 
     @Override
@@ -82,7 +82,7 @@ public class UserDAOImpl implements UserDAO {
             }
             return user;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -106,7 +106,7 @@ public class UserDAOImpl implements UserDAO {
             }
             return users;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -123,7 +123,7 @@ public class UserDAOImpl implements UserDAO {
             preparedStatement.executeUpdate();
             user.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return user;
     }
@@ -140,7 +140,7 @@ public class UserDAOImpl implements UserDAO {
             preparedStatement.executeUpdate();
             entity.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return entity;
     }
@@ -161,7 +161,7 @@ public class UserDAOImpl implements UserDAO {
             }
             return null;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 }

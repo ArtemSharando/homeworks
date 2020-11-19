@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.SubjectDAO;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Subject;
 
@@ -32,7 +33,7 @@ public class SubjectDAOImpl implements SubjectDAO {
             }
             return subject;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -62,7 +63,7 @@ public class SubjectDAOImpl implements SubjectDAO {
                 return subjects;
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -96,7 +97,7 @@ public class SubjectDAOImpl implements SubjectDAO {
             }
             return subject;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 }

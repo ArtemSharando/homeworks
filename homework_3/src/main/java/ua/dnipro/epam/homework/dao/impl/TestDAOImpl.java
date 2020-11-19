@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.TestDAO;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.*;
 import org.apache.log4j.Logger;
@@ -41,7 +42,7 @@ public class TestDAOImpl implements TestDAO {
             }
             return test;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -62,7 +63,7 @@ public class TestDAOImpl implements TestDAO {
             }
             return tests;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -78,7 +79,7 @@ public class TestDAOImpl implements TestDAO {
             preparedStatement.executeUpdate();
             test.setId(getLastInsertId());
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return test;
     }
@@ -93,7 +94,7 @@ public class TestDAOImpl implements TestDAO {
             LOG.info("del");
         } catch (SQLException e) {
             LOG.error(e);
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
         return test;
     }
@@ -107,7 +108,7 @@ public class TestDAOImpl implements TestDAO {
             LOG.info("del");
         } catch (SQLException e) {
             LOG.error(e);
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -120,7 +121,7 @@ public class TestDAOImpl implements TestDAO {
             LOG.info("del");
         } catch (SQLException e) {
             LOG.error(e);
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -134,7 +135,7 @@ public class TestDAOImpl implements TestDAO {
             }
             return null;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 

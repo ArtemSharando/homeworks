@@ -1,6 +1,8 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.RoleDAOI;
+import ua.dnipro.epam.homework.exception.DBException;
+import ua.dnipro.epam.homework.exception.Messages;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Role;
 
@@ -34,12 +36,8 @@ public class RoleDAOImpl implements RoleDAOI {
             }
             return Optional.ofNullable(roles);
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(Messages.ERR_CANNOT_OBTAIN_USER_BY_ID, e);
         }
-    }
-
-    public void create(){
-
     }
 
 }

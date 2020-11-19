@@ -1,6 +1,7 @@
 package ua.dnipro.epam.homework.dao.impl;
 
 import ua.dnipro.epam.homework.dao.ComplexityDAO;
+import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
 import ua.dnipro.epam.homework.entity.Complexity;
 
@@ -33,7 +34,7 @@ public class ComplexityDAOImpl implements ComplexityDAO {
             }
             return complexity;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 
@@ -51,7 +52,7 @@ public class ComplexityDAOImpl implements ComplexityDAO {
             }
             return complexities;
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBException(e);
         }
     }
 

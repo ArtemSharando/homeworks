@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ua.dnipro.epam.homework.entity.RoleName;
 import ua.dnipro.epam.homework.entity.User;
+import ua.dnipro.epam.homework.exception.EmptyLoginOrPasswordException;
+import ua.dnipro.epam.homework.exception.WrongLoginOrPasswordException;
 import ua.dnipro.epam.homework.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +38,7 @@ public class LoginController {
         String password = request.getParameter("password");
 
         if (username == null || password == null || username.isEmpty() || password.isEmpty()) {
-            throw new IOException("Login/password cannot be empty");
+            throw new EmptyLoginOrPasswordException("Login/password cannot be empty");
         }
 
         User user = userService.findByUsername(username);
@@ -68,7 +70,7 @@ public class LoginController {
 
             return "redirect:/home";
         } else {
-            return "index";
+            throw new WrongLoginOrPasswordException("Wrong Username/password");
         }
     }
 }
