@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
-<%@ include file="../jspf/directive/lang.jspf" %>
+<%@ include file="../../jspf/directive/lang.jspf" %>
 </head>
 <body>
 <h1><c:out value="${ex}"/></h1>

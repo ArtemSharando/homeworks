@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 
+import static ua.dnipro.epam.homework.manager.Links.LANG;
+
 @Controller
 @RequestMapping({"/", "/home"})
 public class HomeController {
@@ -20,7 +22,7 @@ public class HomeController {
 
     @PostMapping
     public String getLang(@RequestParam String lang, HttpSession session) {
-        session.setAttribute("lang", lang);
+        session.setAttribute(LANG, lang);
         return "redirect:/home";
     }
 

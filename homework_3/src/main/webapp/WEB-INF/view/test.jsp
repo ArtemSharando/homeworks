@@ -85,7 +85,7 @@
 <div id="worked"><c:out value="${time}"/>:00</div>
 <form id="question_test" action="test" method="post">
 <table>
-    <c:forEach var="q" items="${questionContentWithAnswers}">
+    <c:forEach var="q" items="${list}">
         <tr id="tr_q">
             <th id="counter_q"><c:out value="${q.getCounterQuestion()}"/>.</th>
             <th><c:out value="${q.getContent()}"/></th>

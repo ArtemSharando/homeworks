@@ -30,7 +30,7 @@ public class UserDAOImpl implements UserDAO {
         User user = null;
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_FROM_USER_BY_USERNAME);
-            preparedStatement.setString(1, username);
+            preparedStatement.setString(1, username.toLowerCase());
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 user = new User(
