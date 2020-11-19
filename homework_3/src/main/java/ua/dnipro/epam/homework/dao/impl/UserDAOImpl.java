@@ -21,8 +21,6 @@ public class UserDAOImpl implements UserDAO {
 
     private final Connection connection;
 
-    RoleDAOImpl roleDAOImpl = new RoleDAOImpl();
-
     RoleService roleService = new RoleServiceImpl();
 
     public UserDAOImpl() {
