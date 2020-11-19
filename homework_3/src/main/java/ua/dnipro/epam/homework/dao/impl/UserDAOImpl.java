@@ -6,6 +6,8 @@ import ua.dnipro.epam.homework.entity.Role;
 import ua.dnipro.epam.homework.entity.User;
 import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.manager.DBManager;
+import ua.dnipro.epam.homework.service.RoleService;
+import ua.dnipro.epam.homework.service.impl.RoleServiceImpl;
 
 
 import java.sql.*;
@@ -20,6 +22,8 @@ public class UserDAOImpl implements UserDAO {
     private final Connection connection;
 
     RoleDAOImpl roleDAOImpl = new RoleDAOImpl();
+
+    RoleService roleService = new RoleServiceImpl();
 
     public UserDAOImpl() {
         this.connection = DBManager.getConnection();
@@ -119,7 +123,7 @@ public class UserDAOImpl implements UserDAO {
             preparedStatement.setString(3, user.getName());
             preparedStatement.setString(4, user.getSurname());
             preparedStatement.setBoolean(5, true);
-            preparedStatement.setLong(6, roleDAOImpl.findByRole("user").orElseThrow(RuntimeException::new).getId_roles());
+            preparedStatement.setLong(6, roleService.findByRole("user").getId_roles());
             preparedStatement.executeUpdate();
             user.setId(getLastInsertId());
         } catch (SQLException e) {

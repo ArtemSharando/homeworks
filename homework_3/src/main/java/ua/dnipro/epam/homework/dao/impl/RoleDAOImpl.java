@@ -1,10 +1,11 @@
 package ua.dnipro.epam.homework.dao.impl;
 
-import ua.dnipro.epam.homework.dao.RoleDAOI;
+import ua.dnipro.epam.homework.dao.RoleDAO;
+import ua.dnipro.epam.homework.entity.Role;
 import ua.dnipro.epam.homework.exception.DBException;
 import ua.dnipro.epam.homework.exception.Messages;
+import ua.dnipro.epam.homework.exception.RoleNotFoundException;
 import ua.dnipro.epam.homework.manager.DBManager;
-import ua.dnipro.epam.homework.entity.Role;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,7 +15,7 @@ import java.util.Optional;
 
 import static ua.dnipro.epam.homework.manager.QuerySQL.SELECT_FROM_ROLES_BY_ROLE;
 
-public class RoleDAOImpl implements RoleDAOI {
+public class RoleDAOImpl implements RoleDAO {
 
     private final Connection connection;
 
@@ -33,6 +34,9 @@ public class RoleDAOImpl implements RoleDAOI {
                 roles = new Role(
                         resultSet.getLong("id_roles"),
                         resultSet.getString("role"));
+            }
+            if(roles == null){
+                throw new RoleNotFoundException();
             }
             return Optional.ofNullable(roles);
         } catch (SQLException e) {
