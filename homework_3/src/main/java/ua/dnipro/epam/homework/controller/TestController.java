@@ -51,7 +51,7 @@ public class TestController {
 
         for (QuestionContentWithAnswer questionContentWithAnswer: questionContentWithAnswers){
             for(Answer answer: questionContentWithAnswer.getAnswerOfQ()){
-                modelAndView.addObject(CORRECT_ANSWER+ answer.getId(), answer.isCorrectAnswer());
+                modelAndView.addObject(CORRECT_ANSWER + answer.getId(), answer.isCorrectAnswer());
             }
         }
 
