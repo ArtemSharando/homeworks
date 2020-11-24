@@ -3,6 +3,9 @@ package com.epam.config;
 import com.epam.entity.Order;
 import com.epam.entity.OrderState;
 import com.epam.service.Storage;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -20,12 +23,13 @@ import org.springframework.messaging.MessageChannel;
 import java.util.Iterator;
 import java.util.List;
 
-
+@Log4j
 @Configuration
 @EnableIntegration
 @ComponentScan("com.epam")
 @IntegrationComponentScan
 public class IntegrationConfig {
+
 
     public static final String file = "src/main/resources/file.csv";
 
@@ -35,26 +39,27 @@ public class IntegrationConfig {
         ctx.refresh();
 
         DirectChannel out1 = ctx.getBean("outputChannel1", DirectChannel.class);
-        out1.subscribe(x -> System.out.println(x.getPayload() + " outputChannel1"));
+        out1.subscribe(x -> log.info(x + " outputChannel1"));
 
         DirectChannel out2 = ctx.getBean("outputChannel2", DirectChannel.class);
-        out2.subscribe(x -> System.out.println(x.getPayload() + " outputChannel2"));
-
+        out2.subscribe(x -> log.info(x + " outputChannel2"));
 
         List<Order> orders = ctx.getBean(IntegrationConfig.MGateway.class).parse(IntegrationConfig.file);
 
-        System.out.println(orders + " orders");
+        log.info(orders + " orders");
+        Iterator<Order> iterator = orders.iterator();
 
-        for (Order order : orders) {
-            ctx.getBean(MGateway.class).addOrder(order);
+        while (iterator.hasNext()) {
+            ctx.getBean(IntegrationConfig.MGateway.class).addOrder(iterator.next());
         }
 
-        System.out.println(Storage.storage + " global storage");
+
+        log.info(Storage.storage + " global storage");
 
     }
 
     @Bean
-    MessageChannel outputChannel1() {
+    DirectChannel outputChannel1() {
         return new DirectChannel();
     }
 
@@ -70,22 +75,22 @@ public class IntegrationConfig {
         @Gateway(requestChannel = "outputChannel1")
         List<Order> parse(String file);
 
-        @Gateway(requestChannel = "outputChannel2")
+        @Gateway(requestChannel = "addOrderFlow.input")
         void addOrder(Order order);
     }
 
+    @Bean
+    public IntegrationFlow addOrderFlow() {
+        return flow -> flow
+                .filter(notCanceledOrders())
+                .handle("storage", "addOrder")
+                .channel("outputChannel2");
+    }
 
     @Bean
     public IntegrationFlow parser() {
         return IntegrationFlows.from("outputChannel1")
-                .handle("CSVOrderParser", "parse")
-                .get();
-    }
-
-    @Bean
-    public IntegrationFlow adder() {
-        return IntegrationFlows.from("outputChannel2")
-                .handle("storage", "addOrder")
+                .handle("orderParser", "parse")
                 .get();
     }
 
@@ -95,3 +100,5 @@ public class IntegrationConfig {
     }
 
 }
+
+

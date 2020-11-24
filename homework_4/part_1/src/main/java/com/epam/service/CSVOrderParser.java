@@ -15,7 +15,7 @@ import java.util.List;
 
 
 @Service
-public class CSVOrderParser {
+public class CSVOrderParser{
 
     public List<Order> parse(String csvFile) throws IOException {
         List<Order> orders = new ArrayList<>();
@@ -50,3 +50,4 @@ public class CSVOrderParser {
         return orders;
     }
 }
+
