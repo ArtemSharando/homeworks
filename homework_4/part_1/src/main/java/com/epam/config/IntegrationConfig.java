@@ -4,8 +4,6 @@ import com.epam.entity.Order;
 import com.epam.entity.OrderState;
 import com.epam.service.Storage;
 import lombok.extern.log4j.Log4j;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -100,5 +98,3 @@ public class IntegrationConfig {
     }
 
 }
-
-
