@@ -11,5 +11,4 @@ public class TestAopXmlConfigRunner {
         Note randomNote = (Note) applicationContext.getBean("randomNote");
         randomNote.notateSomething();
     }
-
 }
