@@ -32,7 +32,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
         LOG.info("Found User: " + user);
 
-        List<GrantedAuthority> grantList = new ArrayList<GrantedAuthority>();
+        List<GrantedAuthority> grantList = new ArrayList<>();
         
         if (user.getUserRoleId() == 2) {
             GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_ADMIN");
