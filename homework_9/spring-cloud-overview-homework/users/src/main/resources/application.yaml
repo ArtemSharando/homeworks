@@ -19,10 +19,10 @@ hystrix:
     default:
       circuitBreaker:
         requestVolumeThreshold: 3
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 2000
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000
 
 feign:
   hystrix:

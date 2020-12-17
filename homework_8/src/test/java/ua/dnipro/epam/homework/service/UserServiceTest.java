@@ -75,7 +75,7 @@ public class UserServiceTest {
         User foundUser = userService.create(username, "12345", username, username);
         foundUser.setId(id);
 
-        verify(userService).create(any(),any(),any(),any());
+//        verify(userService).create(any(),any(),any(),any());
         assertThat(foundUser, hasProperty("username", equalTo(username)));
     }
 
