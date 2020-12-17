@@ -24,7 +24,7 @@ public class Grade {
     @GeneratedValue(strategy = SEQUENCE, generator = "grade_seq")
     private Long id;
 
-    private String result;
+    private Integer result;
 
     @ManyToOne
     private Test test;
