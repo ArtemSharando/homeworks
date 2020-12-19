@@ -17,7 +17,6 @@ import java.util.Optional;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static ua.dnipro.epam.homework.manager.QuerySQL.SELECT_FROM_USER_ALL;
 
@@ -39,7 +38,7 @@ public class UserServiceTest {
 
     @Before
     public void setUp() {
-        id = 75L;
+        id = 84L;
         username = "user16";
         user = User
                 .builder()
@@ -53,7 +52,7 @@ public class UserServiceTest {
         users.add(user);
         users.add(User
                 .builder()
-                .id(74L)
+                .id(85L)
                 .name("User15")
                 .username("user15")
                 .password("12345")
@@ -72,12 +71,12 @@ public class UserServiceTest {
         User user = this.user;
         when(userDAO.create(any())).thenReturn(user);
 
-        User foundUser = userService.create(username, "12345", username, username);
+        User foundUser = userService.create(username,user.getPassword(),username,username);
         foundUser.setId(id);
 
-//        verify(userService).create(any(),any(),any(),any());
         assertThat(foundUser, hasProperty("username", equalTo(username)));
     }
+
 
     @Test
     public void shouldFindAllUsers() {
