@@ -29,13 +29,13 @@ public class UpdatesTest {
     @Autowired
     private RequestService requestService;
 
-    private UserDto user = new UserDto();
+    private final UserDto user = new UserDto();
 
-    private RequestDto requestDto = new RequestDto();
+    private final RequestDto requestDto = new RequestDto();
 
-    private RequestDto requestDto2 = new RequestDto();
+    private final RequestDto requestDto2 = new RequestDto();
 
-    private List<RequestDto> requestDtos = new ArrayList<>();
+    private final List<RequestDto> requestDtos = new ArrayList<>();
 
     private String nameAdmin;
 

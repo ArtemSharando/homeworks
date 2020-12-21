@@ -39,7 +39,7 @@ public class UserServiceTest {
     @Before
     public void setUp() {
         id = 84L;
-        username = "user16";
+        username = "user17";
         user = User
                 .builder()
                 .id(id)
