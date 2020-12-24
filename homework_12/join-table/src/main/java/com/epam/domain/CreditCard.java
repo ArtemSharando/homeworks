@@ -1,17 +1,15 @@
-package com.epam.entity;
+package com.epam.domain;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
 @Entity
-@DiscriminatorValue("CC")
-public class CreditCard extends BillingDetails{
+@Data
+@EqualsAndHashCode(callSuper = false)
+public class CreditCard extends BillingDetails {
 
     @Column(name = "card_number")
     private String cardNumber;
@@ -21,5 +19,4 @@ public class CreditCard extends BillingDetails{
 
     @Column(name = "exp_month")
     private int expMonth;
-
 }
