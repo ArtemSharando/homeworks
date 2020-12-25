@@ -1,4 +1,4 @@
-package com.epam.config;
+package com.epam.cfg;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.hibernate.SessionFactory;
@@ -22,7 +22,7 @@ public class HibernateConfiguration {
     @Bean
     public DataSource mySQLDataSource() throws SQLException {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/hw4p2?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
         dataSource.setUser("root");
         dataSource.setPassword("12345Art");
         return dataSource;
@@ -50,6 +50,10 @@ public class HibernateConfiguration {
         hibernateProperties.setProperty("hibernate.show_sql", "true");
         hibernateProperties.setProperty("hibernate.format_sql", "true");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+
+        hibernateProperties.setProperty("hibernate.cache.use_second_level_cache", "true");
+        hibernateProperties.setProperty("hibernate.cache.region.factory_class","org.hibernate.cache.ehcache.EhCacheRegionFactory");
         return hibernateProperties;
     }
+
 }
