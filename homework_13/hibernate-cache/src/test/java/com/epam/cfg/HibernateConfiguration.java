@@ -22,7 +22,7 @@ public class HibernateConfiguration {
     @Bean
     public DataSource mySQLDataSource() throws SQLException {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/test?serverTimezone=UTC");
         dataSource.setUser("root");
         dataSource.setPassword("12345Art");
         return dataSource;

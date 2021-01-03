@@ -34,7 +34,7 @@ public class AppTest {
 
     private CreditCard creditCard;
 
-    private Set<Buyer> buyers = new HashSet<>();
+    private final Set<Buyer> buyers = new HashSet<>();
 
     @Before
     public void setUp(){

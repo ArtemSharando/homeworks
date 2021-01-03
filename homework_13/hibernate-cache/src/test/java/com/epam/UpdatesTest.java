@@ -21,6 +21,7 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {HibernateConfiguration.class})
+//@Transactional
 public class UpdatesTest {
 
     @Autowired
