@@ -1,20 +1,24 @@
-package com.epam.domain;
-
+package com.homework.epam.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
-@Data
-@EqualsAndHashCode(callSuper = false)
+@Table(name = "bank_account")
+@Getter
+@Setter
 public class BankAccount extends BillingDetails {
-
-    @Column(name = "account")
     private String account;
 
     @Column(name = "bank_name")
     private String bankName;
+
 }

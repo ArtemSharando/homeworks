@@ -1,4 +1,4 @@
-package epam.config;
+package test.config;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.hibernate.SessionFactory;
@@ -14,15 +14,15 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Properties;
 
+
 @Configuration
-@ComponentScan(basePackages = "com.epam")
+@ComponentScan(basePackages = "com.homework.epam")
 @EnableTransactionManagement
 public class HibernateConfiguration {
-
     @Bean
-    public DataSource mySQLDataSource() throws SQLException {
+    public DataSource mySqlDataSource() throws SQLException {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/userbase?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/userbase?createDatabaseIfNotExist=true&serverTimezone=UTC");
         dataSource.setUser("root");
         dataSource.setPassword("12345Art");
         return dataSource;
@@ -31,8 +31,8 @@ public class HibernateConfiguration {
     @Bean
     public LocalSessionFactoryBean sessionFactory() throws SQLException {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(mySQLDataSource());
-        sessionFactory.setPackagesToScan("com.epam" );
+        sessionFactory.setDataSource(mySqlDataSource());
+        sessionFactory.setPackagesToScan("com.homework.epam");
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -44,6 +44,7 @@ public class HibernateConfiguration {
         return transactionManager;
     }
 
+
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
@@ -52,4 +53,5 @@ public class HibernateConfiguration {
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         return hibernateProperties;
     }
+
 }

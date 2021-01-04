@@ -2,11 +2,15 @@ package com.epam;
 
 
 import com.epam.config.HibernateConfiguration;
+import com.epam.dao.BillingDetailsDao;
 import com.epam.domain.BankAccount;
 import com.epam.domain.BillingDetails;
 import com.epam.domain.Buyer;
 import com.epam.domain.CreditCard;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +19,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {HibernateConfiguration.class})
@@ -23,6 +31,9 @@ public class AppTest {
 
     @Autowired
     private SessionFactory sessionFactory;
+
+    @Autowired
+    BillingDetailsDao billingDetailsDao;
 
     private Buyer buyer;
 
@@ -50,24 +61,18 @@ public class AppTest {
 
 
     @Test
-    public void testMethod(){
+    public void addAndGetOwnerAndDetailsWithDao() {
         EntityManager entityManager = sessionFactory.createEntityManager();
 
         entityManager.getTransaction().begin();
         entityManager.persist(buyer);
-        entityManager.getTransaction().commit();
-
-        entityManager.getTransaction().begin();
         entityManager.persist(account);
-        entityManager.getTransaction().commit();
-
-        entityManager.getTransaction().begin();
         entityManager.persist(creditCard);
         entityManager.getTransaction().commit();
 
-        List<BillingDetails> resultList = entityManager.createQuery("select bd from BillingDetails bd").getResultList();
+        List<BillingDetails> resultList = entityManager.createQuery("select bd from BillingDetails bd where bd.buyer.id="+buyer.getId()).getResultList();
 
-        resultList.forEach(System.out::println);
+        Assert.assertEquals(resultList.size(), billingDetailsDao.get(buyer.getId()).size());
     }
-
 }
+
