@@ -7,6 +7,7 @@ import com.epam.entity.User;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import org.hibernate.SessionFactory;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -61,8 +62,9 @@ public class CacheTest {
         printCacheInfo();
 
         em = sessionFactory.createEntityManager();
-        System.out.println(em.find(User.class, id));
-
+        User user1 = em.find(User.class, id);
+        Assert.assertEquals(user1.toString(), user.toString());
+        Assert.assertEquals(user1.getName(), user.getName());
     }
 
     private static void printCacheInfo() {
