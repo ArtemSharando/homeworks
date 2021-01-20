@@ -18,7 +18,7 @@ public class Receiver {
     @Autowired
     private JmsTemplate jmsTemplate;
 
-    private List<Message> messageList = new ArrayList<>();
+    private final List<Message> messageList = new ArrayList<>();
 
     @JmsListener(destination = ActiveMQConfig.RECEIVE)
     public void receiveMsg(@Payload Message message){

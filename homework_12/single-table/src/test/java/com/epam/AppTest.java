@@ -61,7 +61,7 @@ public class AppTest {
 
 
     @Test
-    public void addAndGetOwnerAndDetailsWithDao() {
+    public void getBuyerAndDetailsWithDao() {
         EntityManager entityManager = sessionFactory.createEntityManager();
 
         entityManager.getTransaction().begin();

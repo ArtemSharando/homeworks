@@ -21,7 +21,7 @@ services:
     environment:
       MYSQL_USER: user
       MYSQL_PASSWORD: 12345
-      MYSQL_DATABASE: hw14
+      MYSQL_DATABASE: test
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 
   webapp:
